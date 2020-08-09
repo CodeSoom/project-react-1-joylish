@@ -14,14 +14,12 @@ export default function App() {
   return (
     <AppContainer>
       <Header />
-      <div>
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/login" component={LoginPage} />
-          <Route path="/cart" component={CartPage} />
-          <Route path="/product/:productId" component={ProductItemsPage} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/login" component={LoginPage} />
+        <Route path="/cart" component={CartPage} />
+        <Route path="/product/:productId" component={ProductItemsPage} />
+      </Switch>
     </AppContainer>
   );
 }
